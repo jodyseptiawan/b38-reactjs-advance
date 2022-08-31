@@ -25,7 +25,6 @@ const styles = {
   },
 };
 
-
 function Form() {
   return (
     <div>
@@ -51,10 +50,17 @@ function Form() {
             className={cssModules.formInput}
           />
         </div>
-        {/* code here */}
+        <div>
+          <label>Gender</label>
+          <select className="form-select">
+            <option>Choose..</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
       </form>
     </div>
-  )
+  );
 }
 
-export default Form
+export default Form;
